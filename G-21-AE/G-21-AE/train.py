@@ -63,7 +63,7 @@ class TrainManager():
             total_reward += reward
             self.agent.learn(obs, action, reward, next_obs, done)
             obs = next_obs
-            if index_episode % 10 == 0:
+            if index_episode % 2 == 0:
                 with open("result.csv", "a", encoding='utf8', newline='') as f:
                     writer = csv.writer(f)
                     row_result = [index_episode, action, step, reward, total_reward]
