@@ -100,7 +100,7 @@ class TrainManager():
             ep_reward = self.train_episode(e)
             list_episodes.append(e + 1)
             list_rewards.append(ep_reward)
-            if (e + 1) % 10 == 0:
+            if (e + 1) % 2 == 0:
                 sub_list = list_rewards[e - 9:]
                 temp = np.mean(sub_list)
                 list_test_episodes.append(e)
