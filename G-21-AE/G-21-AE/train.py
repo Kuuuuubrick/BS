@@ -110,7 +110,7 @@ class TrainManager():
 
 
 if __name__ == '__main__':
-    list_file_graph = ['g_21']
+    list_file_graph = ['g_27']
     use_gpu = torch.cuda.is_available()
     em = env_manager.EnvManager(list_file_graph=list_file_graph, use_gpu=use_gpu)
     env = em.list_env[0]
